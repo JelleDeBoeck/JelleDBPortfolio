@@ -1,0 +1,295 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins" , sans-serif;
+    scroll-behavior: smooth;
+}
+
+:root {
+    --backgroundvoor: #f6f4ec;
+    --background: #e8e2d9;
+    --black: #151617;
+    --grey: #D9D9D9;
+    --green: #013842;
+    --beige: #333333;
+    --text-alt: #f2f4f4;
+}
+
+.back-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: var(--green);
+    color: var(--background);
+    text-decoration: none;
+    border-radius: 5px;
+    margin: 20px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.back-btn i {
+    margin-right: 5px;
+    font-weight: bold;
+}
+
+
+body {
+    background-color: var(--background);
+}
+
+#heading {
+    color: var(--green);
+}
+
+.heading-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    margin: 0 100px;
+    text-align: left;
+}
+
+.heading-content h1 {
+    font-size: 64px;
+    margin-right: 64px;
+}
+
+.heading-btn {
+    padding: 20px 48px;
+    background-color: var(--green);
+    color: var(--background);
+    text-decoration: none;
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.heading-btn i {
+    margin-right: 8px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.heading-image img{
+    width: 800px;
+    border-radius: 20px;
+}
+
+.tools {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    margin-top: 24px;
+}
+
+.tools-used {
+    padding: 16px 24px 64px 24px;
+    border-radius: 20px;
+}
+
+.tools-used img {
+    width: 36px;
+    margin: 0 12px;
+}
+
+#project-content {
+    background: var(--green);
+}
+
+.project-information {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding-top: 64px;
+    padding-bottom: 112px;
+    margin: 0 auto;
+    max-width: 50%;
+    color: var(--background);
+}
+
+.project-information h2 {
+    margin-bottom: 32px;
+    font-size: 32px;
+}
+
+.project-information p {
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 32px;
+}
+
+.challenge-information, .concept-information {
+    margin: 0 auto;
+    max-width: 80%;
+    text-align: left;
+}
+
+.challenge-information {
+    margin-top: 48px;
+    margin-bottom: 64px;
+}
+
+#projects {
+    padding: 150px 0;
+}
+
+#projects h2{
+    margin-top: 32px;
+    margin-bottom: 64px;
+    font-size: 32px;
+    color: var(--green);
+}
+
+.project-btn {
+    margin-top: 32px;
+    padding: 20px 48px;
+    background-color: var(--green);
+    color: var(--background);
+    text-decoration: none;
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.project-btn i {
+    margin-right: 8px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.project1, .project2, .project3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 120px;
+
+}
+
+video {
+    max-width: 50%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    border-radius: 20px;
+}
+
+.footer p{
+    display: block;
+    justify-content: center;
+    text-align: center;
+    background: var(--green);
+    padding: 48px;
+    font-size: 20px;
+    color: var(--background);
+}
+
+@media only screen and (max-width: 1320px) {
+    .heading-content {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .heading-content h1 {
+        margin-right:0px;
+        margin-bottom: 64px;
+        font-size: 48px;
+    }
+
+    .heading-btn, .project-btn {
+        padding: 16px 32px;
+        font-size: 16px;
+    }
+    
+    .heading-btn i, .project-btn i {
+        font-size: 16px;
+    }
+
+    .project-information p, .footer p {
+        font-size: 16px;
+    }
+
+    #demo {
+        font-size: 26px;
+    }
+}
+
+@media only screen and (max-width: 1100px) {
+    .heading-image img{
+        width: 600px;
+    }
+
+    .tools-used img {
+        width: 36px;
+        margin: 0 6px;
+    }
+
+    .project-information {
+        max-width: 70%;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .heading-image img{
+        width: 500px;
+    }
+
+    .heading-content h1 {
+        font-size: 32px;
+        margin-bottom: 36px;
+    }
+
+    .heading-btn, .project-btn {
+        padding: 12px 24px;
+        font-size: 12px;
+    }
+    
+    .heading-btn i,.project-btn i {
+        font-size: 12px;
+    }
+
+    #demo {
+        font-size: 20px;
+    }
+
+    .project-information h2 {
+        font-size: 20px;
+    }
+
+    .back-btn {
+        font-size: 12px;
+    } 
+    
+    .project-information {
+        max-width: 70%;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .heading-image img{
+        width: 400px;
+    }
+
+    .heading-content h1 {
+        font-size: 24px;
+        margin-bottom: 36px;
+    }
+
+    #demo {
+        font-size: 16px;
+    }
+
+    .project-information p, .footer p {
+        font-size: 12px
+    }
+}
