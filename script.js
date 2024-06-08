@@ -35,3 +35,15 @@ mybutton.addEventListener("click", function() {
     document.body.scrollTop = 0;
     document.documentElement.scrollTop = 0;
 });
+
+ScrollReveal().reveal('.heading', { duration: 3000, origin: 'bottom', distance: '50px' });
+ScrollReveal().reveal('#about', { duration: 1000, origin: 'left', distance: '50px' });
+ScrollReveal().reveal('#projects', { duration: 1000, origin: 'right', distance: '50px' });
+ScrollReveal().reveal('#skills', { duration: 1000, origin: 'bottom', distance: '50px' });
+ScrollReveal().reveal('#contact', { duration: 1000, origin: 'top', distance: '50px' });
+
+
+window.onload = function() {
+    document.body.scrollTop = 0; 
+    document.documentElement.scrollTop = 0; 
+};

@@ -309,6 +309,14 @@ header {
     background: var(--green);
 }
 
+#icon:hover {
+    color: var(--green);
+    background: var(--background);
+    transform: translateY(-5px);
+    border: 2px solid var(--green);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
 .footer p{
     display: block;
     justify-content: center;
