@@ -34,7 +34,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Poppins" , Arial, sans-serif;
+    font-family: "Poppins" , sans-serif;
     scroll-behavior: smooth;
 }
 
@@ -135,7 +135,6 @@ header {
 }
 
 .heading-content h1 {
-    font-family: "Poppins", Arial, sans-serif; /* Fallback voor snellere rendering */
     font-size: 96px;
     margin-bottom: -20px;
     color: var(--green);
