@@ -13,7 +13,8 @@
     <title>Document</title>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/styles.css">
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="preload" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet"></noscript>
 </head>
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-YXEPNC65NN"></script>
@@ -162,7 +163,7 @@
 
     <a id="backToTopBtn">Top</a>
 
-    <script src="https://unpkg.com/scrollreveal"></script>
-    <script src="script.js"></script>
+    <script async src="https://unpkg.com/scrollreveal"></script>
+    <script defer src="script.js"></script>
 </body>
 </html>
