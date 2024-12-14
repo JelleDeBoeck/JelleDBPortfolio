@@ -18,6 +18,10 @@
     --text-alt: #f2f4f4;
 }
 
+.other-color {
+    color: #151617;
+}
+
 .back-btn {
     display: inline-block;
     padding: 10px 20px;
