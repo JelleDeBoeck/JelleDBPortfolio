@@ -347,6 +347,26 @@ header {
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
 }
 
+#mc_embed_signup{
+    display: block;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    background:#1038E5;
+    font:14px "Poppins", Arial,sans-serif;
+    color: white;
+    width: 700px;
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    background-color: var(--green);
+}
+
 .footer p{
     display: block;
     justify-content: center;
@@ -440,6 +460,10 @@ header {
     
     .skills-items img {
         width: 44px;
+    }
+
+    #mc_embed_signup{
+        width: 600px;
     }
 }
 
@@ -547,6 +571,10 @@ header {
         width: 24px;
         margin-top: -16px;
         margin-left: 0px;
+    }
+
+    #mc_embed_signup{
+        width: 500px;
     }
 }
 
@@ -673,6 +701,9 @@ header {
         border-radius: 10px;
         font-size: 14px;
     }
+    #mc_embed_signup{
+        width: 400px;
+    }
 }
 
 @media only screen and (max-width: 768px) {
@@ -771,6 +802,10 @@ header {
         width: 24px;
         margin-top: -16px;
         margin-left: 0px;
+    }
+
+    #mc_embed_signup{
+        width: 300px;
     }
 }
 
