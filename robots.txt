@@ -1,4 +1,4 @@
 User-agent: *
 Disallow:
 
-Sitemap: https://jelledeboeck.github.io/JelleDBPortfolio/sitemap.xml
+Sitemap: https://jelledb.com/sitemap.xml
