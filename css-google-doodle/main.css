@@ -1,0 +1,233 @@
+body {
+	font-family: arial, sans-serif;
+	}
+.center {
+	width:650px;
+	height:400px;
+	position:absolute;
+    z-index: 0;
+	left:50%;
+	top:50%;
+	margin:-200px 0 0 -325px;
+	text-align:center;
+}
+a:hover {
+	text-decoration:underline;
+	}
+nav {
+	float: right;
+	width: 280px;
+	margin-top: 24px;
+	margin-right: 20px;
+	font-size: .8em;
+}
+nav a {
+	color: #222;
+	display: block;
+	float:left;
+	margin: 0px 8px;
+	}
+.apps {
+	text-indent: -9999px;
+	height: 16px;
+	width: 16px;
+	background: url(../images/apps.png);
+	margin-top:5px;
+	}
+.signin {
+	font-weight: bold;
+	color: #FFF;
+	background: #4485f4;
+	padding: 8px 10px;
+	border-style: none;
+	border-radius: 2px;
+	}
+.l {
+	line-height: 25px;	
+	}
+.signin:hover {
+	text-decoration:none;
+	}
+.search {
+	width:80%;
+	height:40px;
+    padding-left: 15px;
+	border-top: 1px solid #c0c0c0;
+	border-right: 1px solid #c0c0c0;
+	border-bottom: 1px solid #d9d9d9;
+	border-left: 1px solid #d9d9d9;
+	background: url(../images/micro.png) no-repeat 95% center;
+	margin-top: 60px;
+	margin-bottom: 15px;
+    font-size: .9em;
+    border-radius: 25px;
+	}
+.button {
+	font-size: .85em;
+	color: #131313;
+	background: #f2f2f2;
+	height: 30px;
+	padding: 6px 12px;
+	margin: 0px 6px;
+    border:none;
+	}
+p {
+	font-size: .8em;
+	color: #222;
+	margin-top: 35px;
+}
+a {
+	text-decoration: none;
+	margin-right: 4px;
+	margin-left: 4px;
+}
+
+#G_mannetje{
+	animation-name: leaning;
+	animation-duration: 4s;
+	animation-delay: 2s;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+	transform-origin:left bottom;	
+}
+
+@-webkit-keyframes leaning {
+	0% {
+		transform: rotate(0deg);
+	}
+	25% {
+		transform: rotate(3deg);
+	}
+	50% {
+		transform: rotate(3deg);
+	}
+	75% {
+		transform: rotate(3deg);
+	}
+	100% {
+		transform: rotate(0deg);
+	}
+}
+
+#O_rood {
+	z-index: -1;
+	display: flex;
+	position: absolute;
+	margin-top: -200px;
+	stroke-dasharray: 698;
+	stroke-dashoffset: 698;
+	animation-name: draw_O_red;
+	animation-delay: 4s;
+	animation-duration: 4s;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+	animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes draw_O_red{
+	to {
+		stroke-dashoffset: 0;
+	}
+}
+
+#potlood_groen {
+	animation-name: pencil_bounce;
+	animation-duration: 3s;
+  	animation-iteration-count: infinite;
+  	animation-timing-function: ease-in-out;
+  	animation-direction: alternate;
+}
+
+@-webkit-keyframes pencil_bounce {
+	0% {
+		transform: translateY(-150px) scaleY(1);
+	}
+	25% {
+		transform: translateY(75px) scaleY(0.75);
+	}
+	50% {
+		transform: translateY(-25px) scaleY(1);
+	}
+	75% {
+		transform: translateY(75px) scaleY(0.75);
+	}
+	100% {
+		transform: translateY(0) scaleY(1);
+	}
+}
+
+#Benen_G_mannetje {
+	display: flex;
+	position: absolute;
+	margin-top: -200px;
+}
+
+#Delen_Zonder_Animatie {
+	z-index: -2;
+	display: flex;
+	position: absolute;
+	margin-top: -200px;
+}
+
+#potlood_groen {
+	display: flex;
+	position: absolute;
+	margin-top: -200px;
+}
+
+.bordje_1 {
+	z-index: -3;
+	left:50%;
+	top:50%;
+	display: flex;
+	position: absolute;
+	opacity: 0;
+	margin:-180px 0 0 130px;
+	animation-name: slide-in;
+	animation-duration: 0.1s;
+	animation-delay: 5s;
+	animation-timing-function: ease-out;
+	animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes slide-in{
+	0% {
+		transform: translateX(0);
+	  }
+	100% {
+		transform: translateX(90px);
+		opacity: 100;
+	}
+}
+
+.bordje_2 {
+	z-index: -3;
+	display: flex;
+	position: absolute;
+	animation-name: move_bordje;
+	animation-duration: 2s;
+	animation-delay: 8s;
+	animation-fill-mode: forwards;
+	animation-iteration-count: infinite;
+	transform-origin: left bottom;
+}
+
+@-webkit-keyframes move_bordje{
+	0% {
+		transform: rotate(0deg);
+	}
+	25% {
+		transform: rotate(6deg);
+	}
+	50% {
+		transform: rotate(6deg);
+	}
+	75% {
+		transform: rotate(6deg);
+	}
+	100% {
+		transform: rotate(0deg);
+	}
+}
+
+

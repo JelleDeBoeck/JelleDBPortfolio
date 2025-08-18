@@ -1,0 +1,514 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --text-color: #363636; 
+    --light-color: #D2D2D2; 
+    --highlight: #2A2829;
+    --background-white: white;
+}
+
+body {
+    font-family: "Inter", serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+h1, h2 {
+    color: var(--text-color);
+}
+
+h3 {
+    color: var(--light-color);
+}
+
+p {
+    color: var(--text-color);
+}
+
+a {
+    text-decoration: none;
+}
+
+/* nav */
+nav {
+    position: relative;
+    width: 100%;
+    height: 100px;
+    background-color: var(--background-white);
+    margin-bottom: 64px;
+}
+
+nav .nav-content {
+    display: flex;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.nav-content a i {
+    font-size: 24px;
+    margin-left: 32px;
+    color: #2A2829;
+    transition: transform 0.8s ease;
+}
+
+.nav-content a:hover {
+    transform: translateX(-5px);
+}
+
+nav .nav-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+nav .nav-text p {
+    font-weight: 800;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+}
+
+nav .nav-text p:first-child {
+    margin-bottom: 8px;
+    color: var(--text-color);
+}
+
+nav .nav-text p:last-child {
+    font-weight: 600;
+    font-size: 0.6rem;
+    letter-spacing: 0.1em;
+    color: var(--light-color);
+    text-transform: uppercase;
+}
+
+/* header */
+#header {
+    border-bottom: 1px solid var(--light-color);
+}
+
+.header-container {
+    display: flex;
+    flex-direction: column;
+    margin-left: 12%;
+    margin-right: 12%;
+}
+
+.header-container .header-list {
+    display: flex;
+    justify-content: center;
+    gap: 12%;
+}
+
+.header-heading {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 112px;
+}
+
+.header-container h1 {
+    font-size: 64px;
+    margin-bottom: 16px;
+}
+
+.header-container h3 {
+    font-size: 32px;
+    font-weight: 500;
+    max-width: 82%;
+    margin-bottom: 32px;
+}
+
+.heading-image img {
+    max-width: 320px;
+    border-radius: 25px;
+}
+
+.other-images img {
+    max-width: 620px;
+}
+
+.header-list {
+    margin-bottom: 112px;
+}
+
+.header-list p {
+    font-size: 16px;
+}
+
+.header-list p:first-child {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.view-project-btn {
+    display: flex;
+    font-size: 18px;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    background-color: var(--text-color);
+    transition: all 0.3s ease;
+    border-radius: 20px;
+    padding: 8px 16px;
+}
+
+.view-project-btn a {
+    color: white;
+    margin-right: 8px;
+}
+
+.view-project-btn i {
+    color: white;
+    font-size: 20px;
+    transition: transform 0.3s ease; 
+}
+
+.view-project-btn:hover {
+    transform: translateX(5px);
+    padding-left: 24px;
+}
+
+/* project section */
+#project {
+    margin-top: 112px;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+#project h2 {
+    font-size: 32px;
+    margin-bottom: 24px;
+}
+
+#project .project-information, .matchdayTextImg, .branding-grid img {
+    margin-bottom: 112px;
+}
+
+.column .matchdayText {
+    margin-bottom: 32px;
+}
+
+#project p {
+    line-height: 32px;
+}
+
+#project img {
+    max-width: 100%;
+    border-radius: 25px;
+}
+
+#project .poster-sketches, 
+#project .storyboard-sketches {
+    display: flex;
+    justify-content: center;
+    margin-top: 64px;
+}
+
+/* contact */
+.contact-links li a {
+    color: #7e7e7e;
+    text-decoration: none;
+    letter-spacing: -0.3px;
+    font-size: 1.3rem;
+}
+
+.contact-links li a:hover {
+    color: var(--text-color);
+    font-weight: 600;
+    font-size: 1.35rem;
+    text-underline-offset: 1rem;
+}
+
+/* footer */
+footer {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--light-color);
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    margin-top: 224px;
+    overflow: hidden;
+}
+  
+footer h1 {
+    color: var(--background-white);
+    font-size: 20.5vw;
+    margin-bottom: 42px;
+    text-transform: uppercase;
+    white-space: nowrap;
+    overflow: hidden;
+    max-width: 100%;
+}
+
+footer a {
+    color: var(--text-color);
+    font-weight: 800;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    transform-origin: bottom;
+    transition: transform 0.2s ease, line-height 0.2s ease;
+}
+
+.footer-socials a:first-child {
+    margin-bottom: 16px;
+}
+
+.footer-socials a:last-child {
+    margin-bottom: 32px;
+}
+
+footer .footer-socials {
+    display: flex;
+    flex-direction: column;
+}
+
+footer a:hover {
+    color: var(--background-white);
+    transform: scaleY(1.2);
+}
+
+footer .rights {
+    color: var(--background-white);
+    margin-bottom: 64px;
+    font-weight: 600;
+    font-size: 0.6rem;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+}
+
+/* back to top */
+#backToTopBtn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: var(--text-color);
+    color: #fff;
+    font-size: 24px;
+    padding: 16px;
+    border-radius: 20px;
+    text-align: center;
+    cursor: pointer;
+    z-index: 1000;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+}
+
+#backToTopBtn:hover {
+    background-color: #333;
+}
+
+#backToTopBtn.show {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.matchdayTextImg {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.matchdayTextImg.row-reverse {
+    flex-direction: row-reverse;
+}
+
+.matchdayTextImg.column {
+    flex-direction: column;
+}
+
+.matchdayTextImg .matchdayText {
+    text-align: left;
+    margin-left: 120px;
+}
+
+.matchdayTextImg.column .matchdayText {
+    margin-left: 0px;
+}
+
+.matchdayTextImg img {
+  width: 30%;
+}
+
+.matchdayTextImg.column img {
+  width: 100%;
+}
+
+.branding-grid.three-cols {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  margin: 2rem 0;
+}
+
+.branding-grid.three-cols img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 8px;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (max-width: 1600px) {
+    .header-container h1 {
+        padding-bottom: 64px;
+    }
+
+    .header-container h3 {
+        font-size: 24px;
+    }
+}
+
+
+
+@media (max-width: 1280px) {
+    .header-heading {
+        flex-direction: column-reverse;
+    }
+
+    .header-heading img {
+        margin-bottom: 64px;
+    }
+
+    .header-heading h1 {
+        font-size: 64px;
+    }
+
+    .header-heading h3 {
+        font-size: 24px;
+        line-height: 36px;
+    }
+
+    .matchdayTextImg.row-reverse {
+        flex-direction: column-reverse;
+    }
+
+    .matchdayTextImg .matchdayText {
+        margin-left: 0px;
+    }
+
+    .header-container h1 {
+        padding-bottom: 64px;
+    }
+
+    .header-container h3 {
+        font-size: 24px;
+        line-height: 42px;
+        max-width: 90%;
+    }
+
+}
+
+@media (max-width: 1024px) {
+    .header-heading {
+        flex-direction: column-reverse;
+    }
+
+    .header-heading img {
+        margin-bottom: 64px;
+    }
+
+    .header-heading h1 {
+        font-size: 56px;
+    }
+
+    .header-heading h3 {
+        font-size: 24px;
+        line-height: 36px;
+    }
+}
+
+@media (max-width: 768px) {
+    .header-heading h1 {
+        font-size: 48px;
+    }
+
+    .header-heading h3 {
+        font-size: 24px;
+        line-height: 36px;
+    }
+
+    .heading-image img {
+        max-width: 80%;
+        margin-left: 12%;
+        margin-right: 12%;
+        margin-top: 256px;
+    }
+
+    .other-images img{
+        width: 98%;
+        margin-top: 256px;
+    }
+
+    .header-container .header-list {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+        justify-items: start;
+    }
+
+    .header-list .item p {
+        font-size: 14px;
+    }
+
+    .header-list .item p:first-child {
+        font-size: 16px;
+        margin-bottom: 8px;
+    }
+
+    #backToTopBtn {
+        font-size: 16px;
+        padding: 16px;
+    }
+
+    #project {
+        margin-top: 380px;
+    }
+}
+
+@media (max-width: 480px) {
+    .heading-image img {
+        margin-left: 12%;
+        margin-right: 12%;
+        margin-top: 220px;
+    }
+    
+    .other-images img{
+        max-width: 320px;
+        margin-top: 220px;
+    }
+
+    .header-container h1 {
+        padding-bottom: 32px;
+    }
+
+    .header-container h3 {
+        font-size: 18px;
+        max-width: 90%;
+    }
+
+    #project h2 {
+        font-size: 24px;
+    }
+
+    p {
+        font-size: 14px;
+    }
+
+    #project {
+        margin-top: 380px;
+    }
+}
